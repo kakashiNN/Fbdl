@@ -20,7 +20,7 @@ app.post("/api/fb", async (req, res) => {
         "user-agent":
           "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36",
         origin: "https://snapsave.app",
-        referer: "https://snapsave.app/"
+        referer: "https://snapsave.app/",
       },
     });
 
@@ -30,4 +30,4 @@ app.post("/api/fb", async (req, res) => {
   }
 });
 
-app.listen(3000, () => console.log("✅ Server running on port 3000"));
+export default app;
